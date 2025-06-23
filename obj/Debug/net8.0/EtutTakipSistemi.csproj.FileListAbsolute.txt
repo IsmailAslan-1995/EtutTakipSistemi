@@ -150,6 +150,7 @@
 /Users/ismailaslan/Desktop/EtutTakipSistemi/obj/Debug/net8.0/EtutTakipSistemi.MvcApplicationPartsAssemblyInfo.cache
 /Users/ismailaslan/Desktop/EtutTakipSistemi/obj/Debug/net8.0/EtutTakipSistemi.RazorAssemblyInfo.cache
 /Users/ismailaslan/Desktop/EtutTakipSistemi/obj/Debug/net8.0/EtutTakipSistemi.RazorAssemblyInfo.cs
+/Users/ismailaslan/Desktop/EtutTakipSistemi/obj/Debug/net8.0/EtutTakipSistemi.sourcelink.json
 /Users/ismailaslan/Desktop/EtutTakipSistemi/obj/Debug/net8.0/staticwebassets.build.json
 /Users/ismailaslan/Desktop/EtutTakipSistemi/obj/Debug/net8.0/staticwebassets.development.json
 /Users/ismailaslan/Desktop/EtutTakipSistemi/obj/Debug/net8.0/staticwebassets/msbuild.EtutTakipSistemi.Microsoft.AspNetCore.StaticWebAssets.props

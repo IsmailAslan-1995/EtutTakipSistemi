@@ -58,14 +58,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FubGlEZXJzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ismailaslan/Desktop/EtutTakipSistemi/Views/Ders/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVycy9DcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/ismailaslan/Desktop/EtutTakipSistemi/Views/Ders/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVycy9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/ismailaslan/Desktop/EtutTakipSistemi/Views/Destek/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVzdGVrL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/ismailaslan/Desktop/EtutTakipSistemi/Views/Kullanici/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS3VsbGFuaWNpL0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismailaslan/Desktop/EtutTakipSistemi/Views/Kullanici/Profil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS3VsbGFuaWNpL1Byb2ZpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ismailaslan/Desktop/EtutTakipSistemi/Views/Kullanici/Register.cshtml]

@@ -30,6 +30,7 @@ public IActionResult Login(Kullanici kullanici)
     if (user != null)
     {
         HttpContext.Session.SetString("username", user.KullaniciAdi);
+        HttpContext.Session.SetInt32("KullaniciId", user.Id); 
         return RedirectToAction("Index", "Dashboard");
     }
 
@@ -43,13 +44,17 @@ public IActionResult Login(Kullanici kullanici)
         return RedirectToAction("Login");
     }
 
-    public IActionResult Profile()
+    [Route("Kullanici/Profil")]
+    public IActionResult Profil()
     {
-        var username = HttpContext.Session.GetString("username");
-        if (username == null)
-            return RedirectToAction("Login");
+        var kullaniciId = HttpContext.Session.GetInt32("KullaniciId");
+        if (kullaniciId == null)
+            return RedirectToAction("Login", "Kullanici");
 
-        var kullanici = _context.Kullanici.FirstOrDefault(x => x.KullaniciAdi == username);
+        var kullanici = _context.Kullanici.FirstOrDefault(x => x.Id == kullaniciId);
+        if (kullanici == null)
+            return NotFound();
+
         return View(kullanici);
     }
     public IActionResult Register()
