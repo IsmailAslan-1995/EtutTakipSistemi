@@ -1,0 +1,25 @@
+@model Tuple<string, List<EtutTakipSistemi.Models.Etut>>
+
+<div class="col-md-6 mb-4">
+    <div class="card shadow-sm h-100 border-primary">
+        <div class="card-header bg-primary text-white">
+            <strong>@Model.Item1</strong> <!-- Ders Adı -->
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                @foreach (var etut in Model.Item2)
+                {
+                    <li class="list-group-item">
+                        <b>Konu:</b> @etut.Konular <br />
+                        <b>Tarih:</b> @etut.Tarih.ToString("dd.MM.yyyy HH:mm")
+                        @if (!string.IsNullOrEmpty(etut.DersVideo))
+                        {
+                            <br /><a href="@etut.DersVideo" class="btn btn-sm btn-outline-primary mt-1" target="_blank">Ders Videosu</a>
+                        }
+                        <span class="badge bg-success float-end">@etut.Katilim</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
