@@ -179,7 +179,7 @@ INSERT INTO kullanici_tablosu (kullanici_adi, sifre, ad, soyad, eposta, universi
 
 CREATE TABLE ogrencideneme (
   sira SERIAL PRIMARY KEY,
-  ogrencid INT,
+  ogrenciid INT,
   turkced VARCHAR(255),
   turkcey VARCHAR(255),
   matd VARCHAR(255),
@@ -208,7 +208,7 @@ VALUES
 
 CREATE TABLE ogrencitest (
   sira SERIAL PRIMARY KEY,
-  ogrencid INT,
+  ogrenciid INT,
   dersadi VARCHAR(255),
   cozulensoru INT,
   dogrusayisi INT,
@@ -263,7 +263,7 @@ CREATE TABLE sorular (
 CREATE TABLE testizin (
   id SERIAL PRIMARY KEY,
   testid INT,
-  ogrencid INT,
+  ogrenciid INT,
   katilim VARCHAR(255)
 );
 
@@ -301,7 +301,7 @@ INSERT INTO testler (testadi, sorusayisi, dersadi, eklenmetarihi) VALUES
 
 CREATE TABLE test_sonuclari (
   id SERIAL PRIMARY KEY,
-  ogrencid INT NOT NULL,
+  ogrenciid INT NOT NULL,
   ders VARCHAR(255) NOT NULL,
   dsayisi INT NOT NULL,
   ysayisi INT NOT NULL,
@@ -313,7 +313,7 @@ CREATE TABLE test_sonuclari (
 
 CREATE TABLE ticket (
   id SERIAL PRIMARY KEY,
-  ogrencid INT,
+  ogrenciid INT,
   mesaj TEXT,
   cevap TEXT,
   konu VARCHAR(255)
