@@ -60,7 +60,7 @@ INSERT INTO dersler (id, dersad, aciklama) VALUES
 
 CREATE TABLE etut (
   sira SERIAL PRIMARY KEY,
-  ogrencid INT,
+  ogrenciid INT,
   tarih DATE,
   konular VARCHAR(255),
   katilim INT,
@@ -68,11 +68,11 @@ CREATE TABLE etut (
   dersvideo VARCHAR(500)
 );
 -- Yakup için örnek etüt kaydı (id: 1)
-INSERT INTO etut (ogrencid, tarih, konular, katilim, dersadi, dersvideo)
+INSERT INTO etut (ogrenciid, tarih, konular, katilim, dersadi, dersvideo)
 VALUES (1, '2025-06-10', 'Fonksiyonlar ve Grafikler', 1, 'Matematik', 'https://www.youtube.com/watch?v=yakupMatematik');
 
 -- Ayşe için örnek etüt kaydı (id: 2)
-INSERT INTO etut (ogrencid, tarih, konular, katilim, dersadi, dersvideo)
+INSERT INTO etut (ogrenciid, tarih, konular, katilim, dersadi, dersvideo)
 VALUES (2, '2025-06-11', 'Elektriksel Devreler', 1, 'Fizik', 'https://www.youtube.com/watch?v=ayseFizik');
 -- Öğrenci 1 için Türkçe, Tarih, Coğrafya, Felsefe, Biyoloji derslerinden 3'er etüt
 -- Öğrenci 1 için
